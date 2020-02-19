@@ -7,7 +7,7 @@ namespace Adapter.Services
     {
         public void Send()
         {
-            Console.WriteLine("Send email pattern");
+            Console.WriteLine("Logger pattern");
         }
     }
 }
