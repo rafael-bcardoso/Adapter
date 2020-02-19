@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adapter.Interfaces;
+using Adapter.Services;
 
 namespace Adapter
 {
@@ -6,7 +7,8 @@ namespace Adapter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ILogger log = new Logger();
+            log.Send();
         }
     }
 }
