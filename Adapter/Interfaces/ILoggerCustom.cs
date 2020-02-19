@@ -4,6 +4,6 @@ namespace Adapter.Interfaces
 {
     public interface ILoggerCustom
     {
-        void Send(string message, string className, DateTime date);
+        void Forward(string message, string className, DateTime date);
     }
 }

@@ -8,7 +8,7 @@ namespace Adapter.Adapters
         private readonly ILoggerCustom _logCustom;
         public void Send()
         {
-            _logCustom.Send("Gravando Log por Composição", this.GetType().Name, DateTime.Now);
+            _logCustom.Forward("Gravando Log por Composição", this.GetType().Name, DateTime.Now);
         }
     }
 }
