@@ -1,4 +1,5 @@
-﻿using Adapter.Interfaces;
+﻿using Adapter.Adapters;
+using Adapter.Interfaces;
 using Adapter.Services;
 
 namespace Adapter
@@ -9,6 +10,10 @@ namespace Adapter
         {
             ILogger log = new Logger();
             log.Send();
+
+
+            ILogger logCustom = new LogAdapter();
+            logCustom.Send();
         }
     }
 }
